@@ -47,11 +47,7 @@ def fetch_products():
             for prd in cursor.fetchall():
                 products.append(Product(*prd))
 
-            print(products)
     finally:
         conn.close()
 
     return products
-
-
-# fetch_products()
