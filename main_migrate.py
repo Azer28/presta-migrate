@@ -3,7 +3,7 @@ from shopify_controller import create_shopify_collections, add_shopify_products
 
 
 def migrate_categories_to_shopify():
-    print("===== Start migration of categories =====")
+    print("===== Start migration of categories ======")
     ctgrs = fetch_categories()
     create_shopify_collections(ctgrs)
 
