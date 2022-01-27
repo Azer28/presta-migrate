@@ -1,4 +1,4 @@
-name: pls_deploy_prod
+name: pls_deploy_staging
 
 on:
   # push:
