@@ -1,4 +1,4 @@
-name: pls_deploy
+name: pls_deploy_prod
 
 on:
   # push:
@@ -32,5 +32,5 @@ jobs:
         run: |
           python -m venv .venv
           source .venv/bin/activate
-      - name: Echo version
-        run: python -v
+          python -v
+          echo "Deploying on prod"
