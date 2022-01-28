@@ -29,8 +29,11 @@ jobs:
           cache: 'pip'
 
       - name: Create and start virtual environment
+      - env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
           python -m venv .venv
           source .venv/bin/activate
           python -v
           echo "Deploying on prod"
+          echo "$GITHUB_CONTEXT"
