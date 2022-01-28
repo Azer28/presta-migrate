@@ -1,7 +1,7 @@
 # presta-migrate
 
 ### System Requirements
-python 3.8
+python 3.8 
 
 ### Prerequisites
 1. Run ```pip install -r requirements.txt```
